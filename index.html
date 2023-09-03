@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+</head>
+
+<body onkeypress="keyBoardController(event)">
+
+    <div class="cal-display">
+        <div id="full-display" class="userDisplay">
+            0
+        </div>
+        <input id="mini-display" disabled class="single-time-display" type="text" value="">
+    </div>
+    <div class="container">
+
+        <div></div>
+
+        <button onclick="clearAllThing()" class="btns clear">AC</button>
+        <button onclick="setAllThings('(')" class="btns">(</button>
+        <button onclick="setAllThings(')')" class="btns">)</button>
+        <button onclick="setAllThings('/')" class="btns sign">/</button>
+
+        <div></div>
+        <div></div>
+
+        <button onclick="setAllThings('7')" class="btns">7</button>
+        <button onclick="setAllThings('8')" class="btns">8</button>
+        <button onclick="setAllThings('9')" class="btns">9</button>
+        <button onclick="setAllThings('*')" class="btns sign">*</button>
+
+        <div></div>
+        <div></div>
+
+        <button onclick="setAllThings('4')" class="btns">4</button>
+        <button onclick="setAllThings('5')" class="btns">5</button>
+        <button onclick="setAllThings('6')" class="btns">6</button>
+        <button onclick="setAllThings('+')" class="btns sign">+</button>
+
+        <div></div>
+        <div></div>
+
+        <button onclick="setAllThings('1')" class="btns">1</button>
+        <button onclick="setAllThings('2')" class="btns">2</button>
+        <button onclick="setAllThings('3')" class="btns">3</button>
+        <button onclick="setAllThings('-')" class="btns sign">-</button>
+
+        <div></div>
+        <div></div>
+
+        <button onclick="setAllThings('%')" style="border-bottom-left-radius: 10px;" class="btns sign">%</button>
+        <button onclick="setAllThings('0')" class="btns">0</button>
+        <button onclick="setAllThings('.')" class="btns">.</button>
+        <button onclick="evaluation()" style="border-bottom-right-radius: 10px;" class="btns equal">=</button>
+
+        <div></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
